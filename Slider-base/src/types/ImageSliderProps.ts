@@ -1,5 +1,8 @@
 interface ImageSliderProps {
-    imageUrls: string[]
+    images: {
+        url: string
+        alt: string
+    }[]
 }
 
 export default ImageSliderProps;
