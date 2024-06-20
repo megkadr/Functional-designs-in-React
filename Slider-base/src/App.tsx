@@ -6,9 +6,15 @@ import car4 from "./assets/car-4.jpg"
 import car5 from "./assets/car-5.jpg"
 import ImageSlider from "./components/ImageSlider"
 
-const IMAGES = [car1, car2, car3, car4, car5]
+const IMAGES = [
+  {url: car1, alt: "Car One"},
+  {url: car2, alt: "Car Two"}, 
+  {url: car3, alt: "Car Three"},
+  {url: car4, alt: "Car Four"},
+  {url: car5, alt: "Car Five"},
+]
 
 export default function App() {
-  return <ImageSlider imageUrls={IMAGES}/>
+  return <ImageSlider images={IMAGES}/>
 }
 
